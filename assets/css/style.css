@@ -1099,7 +1099,8 @@ footer ul li a {
   }
   footer {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
   .f-logo img {
     max-height: 40px;

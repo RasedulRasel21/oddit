@@ -6,21 +6,32 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Oddit</title>
       <link rel="stylesheet" href="../assets/css/style.css">
-   </head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
    <body>
       <header>
          <div class="notification-bar">
             <p> <b>Boost your DTC brand, guaranteed.</b> Get a full refund if you don't learn something valuable. <a href="#oddit-prices"> Get Started</a>
             </p>
          </div>
-         <nav class="oddit-container">
-          <a href="../index.html">  <img src="../assets/images/601aefc655da8366545d9b35_oddit logo.png" class="logo" alt=""></a>
+         <nav class="oddit-container"> 
+            <a href="../index.html">  <img src="../assets/images/601aefc655da8366545d9b35_oddit logo.png" class="logo" alt=""></a>
+            <button type="button" class="navbar-toggle navbar-btn" onclick="myFunction()"> <i class="fa fa-bars"></i> </button>
             <ul>
                <li><a href="#">About</a></li>
                <li><a href="./pricing.html">Pricing</a></li>
                <li><a href="#" class="btn1">Try Oddit Free</a></li>
             </ul>
          </nav>
+         <div class="mobile-nav" id="mb-nav">
+            <ul>
+               <li><a href="./about.html">About</a></li>
+               <li><a href="./pricing.html">Pricing</a></li>
+               <li><a href="#" class="btn1">Try Oddit Free</a></li>
+            </ul>
+         </div>
       </header>
       <div class="about-hero oddit-container" data-aos="fade-up">
           <div class="a-h-left">
@@ -158,6 +169,7 @@
               <a href="#" class="btn1">Signup</a>
           </div>
       </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="../assets/js/custom.js"></script>
    </body>
 </html>
