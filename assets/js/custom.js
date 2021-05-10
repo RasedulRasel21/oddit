@@ -6,3 +6,12 @@ function faqs(tab) {
     }
     document.getElementById(tab).style.display = "block";  
   }
+
+  function myFunction() {
+
+  var element = document.getElementById("mb-nav");
+  element.classList.toggle("mb-nav-view");
+ 
+ }
+
+  AOS.init();

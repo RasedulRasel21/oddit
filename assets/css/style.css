@@ -46,9 +46,17 @@ ul li {
   text-decoration: underline;
 }
 nav {
-  margin-top: 16px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  position: sticky;
+  left: 0%;
+  top: 0px;
+  right: 0%;
+  bottom: auto;
+  z-index: 9;
+  background: #fff;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 nav ul {
   display: flex;
@@ -200,7 +208,7 @@ nav ul li a {
   margin: 50px 0 20px 0;
 }
 .feedback-row p {
-  color: #3527d8;
+  color: #9c9c9c;
   line-height: 1.667em;
 }
 .why-oddit {
@@ -234,7 +242,7 @@ nav ul li a {
 }
 .why-oddit-row ul li {
   list-style: disc !important;
-  color: #3527d8;
+  color: #9c9c9c;
   font-size: 18px;
 }
 .why-oddit-row ul {
@@ -833,4 +841,300 @@ footer ul li a {
 }
 .p-faq {
   margin-top: 100px;
+}
+.navbar-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 768px) {
+  .notification-bar {
+    padding: 20px;
+  }
+  .oddit-container {
+    padding: 0 50px;
+  }
+  .logo-list ul li img {
+    max-height: 25px;
+  }
+  .about-oddit {
+    padding: 50px;
+  }
+  .why-oddit-row {
+    grid-template-columns: 1fr;
+  }
+  .why-oddit h1 {
+    font-size: 56px;
+  }
+  .why-mb .w-left {
+    order: 2;
+  }
+  .t-r-two img {
+    transform: translate(0%, 100%);
+  }
+  .t-r-three img {
+    transform: translate(-26%, -24%);
+  }
+  .t-r-four img {
+    transform: translate(-50%, 110%);
+  }
+  .pricing-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .h-p-bottom {
+    margin: 100px 0;
+  }
+  .guarantee {
+    padding: 50px;
+  }
+  .team-mate {
+    padding: 25px;
+  }
+  .tmates {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .tmates-row img {
+    max-height: 100px;
+  }
+  .faq-top {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+  }
+  .f-b-content {
+    padding: 0;
+  }
+  .subscribtion {
+    margin: 50px;
+    padding: 50px !important;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    padding: 20px 100px;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    margin: 100px 0 0 0;
+  }
+  .a-h-right img {
+    display: none;
+  }
+  .t-row {
+    grid-gap: 30px;
+  }
+  .j-left {
+    padding: 50px 30px;
+  }
+  .j-right {
+    padding: 50px 30px;
+  }
+  .questions {
+    padding: 25px;
+  }
+}
+#mb-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 20px 0;
+  transition: 0.3s;
+  margin-top: -300px;
+  z-index: 1;
+}
+.navbar-cross {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .notification-bar {
+    display: none;
+  }
+  .oddit-container {
+    padding: 0 15px;
+  }
+  .navbar-btn {
+    display: block;
+    background: none;
+    border: none;
+    text-align: end;
+    font-size: 30px;
+  }
+
+  .mb-nav-view {
+    margin-top: 0px !important;
+  }
+  .mobile-nav {
+    text-align: center;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .hero-section {
+    margin-top: 50px !important;
+    padding: 20px;
+  }
+  .hero-section h1 {
+    font-size: 35px;
+  }
+  .hero-section p {
+    font-size: 20px;
+  }
+  .hero-img p {
+    font-size: 24px;
+  }
+  .logo-list ul {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 15px;
+  }
+  .logo-list ul li {
+    margin-top: 20px;
+  }
+  .logo-list ul li img {
+    max-height: 20px;
+  }
+  .about-oddit-bottom {
+    grid-template-columns: 1fr;
+  }
+  .about-oddit {
+    padding-bottom: 50px;
+  }
+  .feedback-row {
+    grid-template-columns: 1fr;
+  }
+  .feedback-top p {
+    font-size: 20px;
+  }
+  .why-oddit h1 {
+    font-size: 35px !important;
+    margin-bottom: 50px;
+  }
+  .why-oddit-row {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: 30px 0;
+  }
+  .why-oddit-row img {
+    margin: 0;
+  }
+  .why-mb .w-left {
+    order: 2;
+  }
+  .why-oddit-row a {
+    font-size: 12px;
+  }
+  .why-oddit-row h2 {
+    font-size: 30px;
+  }
+  .t-row {
+    grid-template-columns: 1fr;
+  }
+  .pricing-list {
+    grid-template-columns: 1fr;
+  }
+  .guarantee p {
+    font-size: 14px;
+  }
+  .h-p-bottom {
+    margin: 50px 0;
+  }
+  .guarantee {
+    padding: 50px 30px;
+  }
+  .guarantee h1 {
+    font-size: 26px !important;
+  }
+  .team-mate {
+    padding: 0;
+    margin-top: 36px;
+  }
+  .tmates {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  .faq {
+    margin-top: 60px;
+  }
+  .team-mate p {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  .faq-top {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  .f-b-cata {
+    gap: 20px;
+  }
+  .f-b-content {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .f-con {
+    padding: 20px;
+  }
+  .subscribtion {
+    margin: 0;
+    padding: 50px 15px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .f-logo img {
+    max-height: 40px;
+  }
+  .t-r-one img {
+    max-height: 60px;
+    transform: translate(-281%, -208%);
+  }
+  .t-r-two img {
+    max-height: 60px;
+    transform: translate(34%, 77%);
+    margin-top: 0;
+  }
+  .t-r-three img {
+    max-height: 60px;
+    transform: translate(-48%, -86%);
+  }
+  .about-hero {
+    grid-template-columns: 1fr;
+    margin: 100px 0 0 0;
+  }
+  .a-h-right img {
+    display: none;
+  }
+  .ques {
+    grid-template-columns: 1fr;
+  }
+  .questions {
+    padding: 25px;
+  }
+  .q-box {
+    padding: 30px;
+  }
+  .join-us {
+    grid-template-columns: 1fr;
+    margin: 100px 0;
+  }
 }
